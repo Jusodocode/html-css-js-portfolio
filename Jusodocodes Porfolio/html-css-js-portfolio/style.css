@@ -69,12 +69,25 @@ a:hover {
     color: lightgrey;
  }
 
-.logo {
+ .logo {
     font-size: 2rem;
+    transition: font-size 0.3s ease; /* Smooth transition for font size */
+    position: relative;
+    display: inline-block;
+}
+
+@keyframes colorShift {
+    0% { color: rgb(255, 0, 0); }   /* Red */
+    25% { color: rgb(0, 255, 0); }  /* Green */
+    50% { color: rgb(0, 0, 255); }  /* Blue */
+    75% { color: rgb(255, 255, 0); } /* Yellow */
+    100% { color: rgb(255, 0, 255); } /* Magenta */
 }
 
 .logo:hover {
+    font-size: 2.5rem; /* Increase font size on hover */
     cursor: default;
+    animation: colorShift 7s infinite; /* Dynamic color animation */
 }
 
 #hamburger-nav {
