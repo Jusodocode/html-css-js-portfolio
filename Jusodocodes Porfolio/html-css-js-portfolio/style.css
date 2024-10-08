@@ -71,24 +71,42 @@ a:hover {
 
  .logo {
     font-size: 2rem;
-    transition: font-size 0.3s ease; /* Smooth transition for font size */
+    font-weight: bold;
+    color: black; /* Default black color */
     position: relative;
     display: inline-block;
-}
-
-@keyframes colorShift {
-    0% { color: rgb(130, 41, 41); }   /* Red */
-    25% { color: rgb(43, 103, 43); }  /* Green */
-    50% { color: rgb(45, 45, 84); }  /* Blue */
-    75% { color: rgb(129, 129, 51); } /* Yellow */
-    100% { color: rgb(123, 51, 123); } /* Magenta */
+    transition: font-size 0.3s ease; /* Smooth font size transition */
 }
 
 .logo:hover {
     font-size: 2.5rem; /* Increase font size on hover */
-    cursor: default;
-    animation: colorShift 7s infinite; /* Dynamic color animation */
+    background: linear-gradient(90deg, 
+    black,            /* Black */
+    darkgray,         /* Dark Gray */
+    gray,             /* Gray */
+    lightgray         /* Light Gray */
+        
+    );
+    background-size: 400%;
+    -webkit-background-clip: text;
+    color: transparent; /* Make text transparent to show the background gradient */
+    animation: flowColors 3.5s linear infinite; /* Non-stop flowing effect */
+    transition: font-size 0.3s ease; /* Only animate the font size on hover */
 }
+
+@keyframes flowColors {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%; /* Smooth transition to the end of the gradient */
+    }
+    100% {
+        background-position: 0% 50%; /* Loop back to the start smoothly */
+    }
+}
+
+
 
 #hamburger-nav {
     display: none;
