@@ -77,11 +77,11 @@ a:hover {
 }
 
 @keyframes colorShift {
-    0% { color: rgb(255, 0, 0); }   /* Red */
-    25% { color: rgb(0, 255, 0); }  /* Green */
-    50% { color: rgb(0, 0, 255); }  /* Blue */
-    75% { color: rgb(255, 255, 0); } /* Yellow */
-    100% { color: rgb(255, 0, 255); } /* Magenta */
+    0% { color: rgb(130, 41, 41); }   /* Red */
+    25% { color: rgb(43, 103, 43); }  /* Green */
+    50% { color: rgb(45, 45, 84); }  /* Blue */
+    75% { color: rgb(129, 129, 51); } /* Yellow */
+    100% { color: rgb(123, 51, 123); } /* Magenta */
 }
 
 .logo:hover {
