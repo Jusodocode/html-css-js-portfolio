@@ -217,8 +217,14 @@ section {
     gap: 1rem;
 }
 
-#socials-container img{
+#socials-container img {
     width: 2rem;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+#socials-container img:hover {
+    transform: scale(1.2); 
+    filter: brightness(1.2); 
 }
 /* ICONS */
 
