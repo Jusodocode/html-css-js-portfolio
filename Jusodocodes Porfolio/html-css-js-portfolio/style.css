@@ -282,7 +282,7 @@ section {
     text-align: center;
 }
 
-.section__text__p1 {
+.section__text__p2 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
 }
@@ -293,8 +293,11 @@ section {
 }
 
 #socials-container img {
-    width: 3rem;
-
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-top: 1rem;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
@@ -303,3 +306,119 @@ section {
     filter: brightness(1.2); /* Brighten the image on hover */
 }
 /* ICONS */
+
+.icon {
+    cursor: pointer;
+    height: 3rem;
+}
+
+/* BUTTONS */
+
+.btn-container {
+    display: flex;
+    justify-content:center;
+    gap: 1rem;
+}
+
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+.btn-color-1,
+.btn-color-2 {
+    border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+    cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+    background: rgb(53, 53, 53);
+    color: white;
+}
+
+.btn-color-1:hover {
+    background: rgb(0, 0, 0);
+}
+
+.btn-color-2 {
+    background: none;
+}
+
+.btn-color-2:hover {
+    border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+.btn-container {
+    gap: 1rem;
+    
+}
+
+/* ABOUT SECTION */
+
+#about {
+        position: relative;
+}
+
+.about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-details-container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-containers, 
+.about-details-container {
+    display: flex;
+    margin-bottom: 4rem;
+}
+
+.about-pic {
+    border-radius: 2rem;
+}
+
+.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+    width: 2rem; 
+    height: 2rem; 
+    transition: transform 0.3s ease; 
+}
+
+.arrow:hover {
+    transform: scale(1.5); 
+}
+
+.details-container {
+    padding: 1.5rem;
+    width: 20rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border:rgb(53, 53, 53) 0.1rem solid;
+    border-color:rgb(163, 163, 163);
+    text-align: center;
+}
+
+.section-container {
+    gap: 4rem;
+    height: 80%;
+}
+
+.section__pic-container {
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
