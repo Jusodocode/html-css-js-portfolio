@@ -24,6 +24,7 @@ a, .btn {
     transition: all 300ms ease;
 }
 
+
 nav, .nav-links{
     display: flex;
 }
@@ -35,7 +36,7 @@ nav {
 }
 
 .nav-links {
-    gap: 2rem;
+    gap: 3rem;
     list-style: none;
     font-size: 1.5rem;
 }
@@ -47,6 +48,7 @@ a {
     color: black;
     font-size: 25px;
     letter-spacing: 0.5px;
+    font-weight: 100;
 }
 
 a:after {
@@ -66,12 +68,13 @@ a:hover:after {
 }
 
 a:hover {
-    color: lightgrey;
+    color: rgb(97, 97, 97);
  }
 
  .logo {
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
     color: black; /* Default black color */
     position: relative;
     display: inline-block;
@@ -272,6 +275,10 @@ section {
 .section__text {
     align-self: center;
     text-align: center;
+}
+
+.section__text h1 {
+    font-size: 3rem;
 }
 
 .section__text p {
@@ -517,3 +524,5 @@ article {
 article .icon {
     cursor: default;
 }
+
+
