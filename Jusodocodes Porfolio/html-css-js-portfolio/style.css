@@ -285,6 +285,30 @@ section {
 .section__text__p2 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, 
+        rgb(77, 77, 77),         /* Black */
+        rgb(109, 109, 109),     /* Light Gray */
+        rgb(218, 218, 218) ,         /* White */
+        rgb(109, 109, 109) ,
+        rgb(77, 77, 77)
+    );
+    background-size: 400%;
+    -webkit-background-clip: text;
+    color: transparent; /* Make text transparent to show the background gradient */
+    animation: textFlowColors 3.5s linear infinite; /* Apply the same color-waving effect */
+}
+
+@keyframes textFlowColors {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%; /* Smooth transition to the end of the gradient */
+    }
+    100% {
+        background-position: 0% 50%; /* Loop back to the start smoothly */
+    }
 }
 
 .title {
