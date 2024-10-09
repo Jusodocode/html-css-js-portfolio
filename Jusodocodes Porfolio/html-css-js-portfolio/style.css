@@ -446,3 +446,74 @@ section {
     width: 400px;
     margin: auto 0;
 }
+
+/* EXPERIENCE SECTION */
+
+#experience {
+    position: relative;
+}
+
+.experience-sub-title {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.experience-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 3rem;
+    margin-left: 13rem;
+    margin-right: 13rem;
+}
+
+.article-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: space-around;
+    padding-bottom: 3rem;
+}
+
+.article-container h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, 
+        rgb(28, 28, 28),
+        rgb(28, 28, 28),         /* Black */
+        rgb(109, 109, 109),     /* Light Gray */
+        rgb(218, 218, 218),     /* White */
+        rgb(109, 109, 109),
+        rgb(28, 28, 28),
+        rgb(28, 28, 28)
+    );
+    background-size: 400%;
+    -webkit-background-clip: text;
+    color: transparent; /* Make text transparent to show the background gradient */
+    animation: textFlowColorsLeft 2s linear infinite; /* Apply the left-side-only flow effect */
+}
+
+/* Keyframes for a continuous leftward flow */
+@keyframes textFlowColorsLeft {
+    0% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%; /* Always move the background to the left */
+    }
+}
+
+article {
+    display: flex;
+    width: 10rem;
+    justify-content: normal;
+    gap: 0.5rem;
+}
+
+article .icon {
+    cursor: default;
+}
