@@ -528,13 +528,21 @@ article .icon {
 
 /* PROJECTS SECTION */
 
+/* PROJECTS SECTION */
+
 #projects {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column;
     position: relative;
 }
 
 .color-container {
     border-color: rgb(163, 163, 163);
     background: rgb(255, 255, 255);
+    margin: 1rem; /* Add some margin between project cards */
+    text-align: center;
 }
 
 .project-img {
@@ -551,6 +559,16 @@ article .icon {
 .project-btn {
     color: black;
     border-color: rgb(163, 163, 163);
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.arrow {
+    margin-top: 2rem; /* Add some space for the arrow */
 }
 
 
