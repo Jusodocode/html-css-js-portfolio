@@ -47,7 +47,7 @@ a {
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     color: black;
-    font-size: 25px;
+    font-size: 20px;
     letter-spacing: 0.5px;
     font-weight: 100;
 }
@@ -402,8 +402,16 @@ section {
 
 .about-containers {
     gap: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     margin-top: 2rem;
+}
+
+.about-sub-title {
+    
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
 }
 
 .about-details-container {
@@ -411,17 +419,36 @@ section {
     flex-direction: column;
 }
 
+/* Ensure proper layout for the .details-container-tech */
 .about-details-container .details-container-tech {
-    padding: 1.5rem;
+    position: relative; /* Allows absolute positioning for the title */
+    padding: 4.5rem 1.5rem 1.5rem 1.5rem; /* Extra padding at the top for the subtitle */
     width: 93.4%;
-    flex-wrap: 3 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     background: white;
     border-radius: 2rem;
-    border:rgb(53, 53, 53) 0.1rem solid;
-    border-color:rgb(163, 163, 163);
-    display: flex;
+    border: 0.1rem solid rgb(163, 163, 163);
     margin-bottom: 28%;
 }
+
+/* Center the about-sub-title at the top inside the details-container-tech */
+.about-details-container .details-container-tech .about-sub-title {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    text-align: center;
+    width: 100%; /* Full width to span the container */
+    position: absolute; /* Absolutely position it within the .details-container-tech */
+    top: 10px; /* Adjust as needed for spacing */
+    left: 50%;
+    transform: translateX(-50%); /* Perfectly center it horizontally */
+    margin-bottom: 2rem; /* Create spacing below the title */
+}
+
 
 .about-containers, 
 .about-details-container {
@@ -497,6 +524,15 @@ section {
     width: 100%;
     column-gap: 7rem; /* Add more space between the columns */
     row-gap: 2rem; /* You can keep the vertical space same */
+}
+
+.experience-details-container-exp {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 3rem;
+    margin-left: 13rem;
+    margin-right: 13rem;
 }
 
 .article-container h3 {
@@ -591,6 +627,3 @@ article .icon {
 .arrow {
     margin-top: 2rem; /* Add some space for the arrow */
 }
-
-
-
