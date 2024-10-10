@@ -8,6 +8,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    height: 100vh;
 }
 
 html {
@@ -410,10 +411,22 @@ section {
     flex-direction: column;
 }
 
+.about-details-container .details-container-tech {
+    padding: 1.5rem;
+    width: 93.4%;
+    flex-wrap: 3 2;
+    background: white;
+    border-radius: 2rem;
+    border:rgb(53, 53, 53) 0.1rem solid;
+    border-color:rgb(163, 163, 163);
+    display: flex;
+    margin-bottom: 28%;
+}
+
 .about-containers, 
 .about-details-container {
     display: flex;
-    margin-bottom: 4rem;
+    margin-top: 7rem;
 }
 
 .about-pic {
@@ -478,13 +491,12 @@ section {
 }
 
 .article-container {
-    display: flex;
-    text-align: initial;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 3rem;
-    justify-content: space-around;
-    padding-bottom: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    column-gap: 7rem; /* Add more space between the columns */
+    row-gap: 2rem; /* You can keep the vertical space same */
 }
 
 .article-container h3 {
@@ -518,8 +530,9 @@ section {
 article {
     display: flex;
     width: 10rem;
-    justify-content: normal;
     gap: 0.5rem;
+    align-items: center;
+    
 }
 
 article .icon {
@@ -528,7 +541,6 @@ article .icon {
 
 /* PROJECTS SECTION */
 
-/* PROJECTS SECTION */
 
 #projects {
     display: flex;
@@ -536,6 +548,15 @@ article .icon {
     align-items: center; /* Center vertically */
     flex-direction: column;
     position: relative;
+}
+
+.about-containers-proj {
+    display: flex;
+    flex-direction: row;
+}
+
+.about-containers-proj .article-container {
+    display: block;
 }
 
 .color-container {
