@@ -530,7 +530,7 @@ section {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: 3rem;
+    margin: 0;
     margin-left: 13rem;
     margin-right: 13rem;
 }
@@ -567,13 +567,78 @@ article {
     display: flex;
     width: 10rem;
     gap: 0.5rem;
-    align-items: center;
-    
+    align-items: center;  
 }
 
 article .icon {
     cursor: default;
 }
+
+.details-container-exp {
+    padding: 1.5rem;
+    width: 10rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border:rgb(36, 36, 36) 0.2rem solid;
+    border-color:rgb(101, 101, 101);    
+    text-align: center;
+}
+
+.article-container-exp {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    column-gap: 7rem; /* Add more space between the columns */
+    row-gap: 6rem;  
+    justify-items: center;
+    margin-bottom: 2rem;
+}
+
+.article-container-exp p {
+    opacity: 0; /* Hide by default */
+    transition: opacity 0.3s ease 0.1s, height 0.3s ease; /* Smooth transition for opacity with a delay */
+    height: 0; /* Prevents taking up space */
+    overflow: hidden; /* Hide overflow */
+}
+
+/* Show the specific p element when hovering over the corresponding article */
+.article-container-exp article:hover p {
+    opacity: 1; /* Show on hover */
+    height: auto; /* Allow height to grow */
+    margin-top: 5px; /* Optional: adds space between h3 and p */
+    transition-delay: 0.1s; /* Delay for the transition */
+}
+.article-container-exp h3 {
+    display: flex;
+    font-size: 1.25rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, 
+        rgb(28, 28, 28),
+        rgb(28, 28, 28),         /* Black */
+        rgb(109, 109, 109),     /* Light Gray */
+        rgb(218, 218, 218),     /* White */
+        rgb(109, 109, 109),
+        rgb(28, 28, 28),
+        rgb(28, 28, 28)
+    );
+    background-size: 400%;
+    -webkit-background-clip: text;
+    color: transparent; /* Make text transparent to show the background gradient */
+    animation: textFlowColorsLeft 2s linear infinite; /* Apply the left-side-only flow effect */
+}
+
+/* Keyframes for a continuous leftward flow */
+@keyframes textFlowColorsLeft {
+    0% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%; /* Always move the background to the left */
+    }
+}
+
 
 /* PROJECTS SECTION */
 
@@ -627,3 +692,55 @@ article .icon {
 .arrow {
     margin-top: 2rem; /* Add some space for the arrow */
 }
+
+/* CONTACT SECTION */
+
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(50, 50, 50);
+    background: (250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.contact-info-container p {
+    font-size: larger;
+}
+
+.contact-icon {
+    cursor: default;
+}
+
+.email-icon {
+    height: 2.5rem;
+}
+
+/* FOOTER SECTION */
+
+footer {
+    height: 26vh;
+    margin: 0 1rem;
+}
+
+footer p{
+    text-align: center;
+}
+
