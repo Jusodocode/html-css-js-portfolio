@@ -598,8 +598,8 @@ article .icon {
 
 .article-container-exp p {
     opacity: 0; /* Hide by default */
-    transition: opacity 0.3s ease 0.1s, height 0.3s ease; /* Smooth transition for opacity with a delay */
-    height: 0; /* Prevents taking up space */
+    transition: opacity 2.5s ease-in-out, height 3s ease-in-out; /* Smoother transition for opacity and height */
+    height: 0.5px; /* Start with a very small height to avoid a jump effect */
     overflow: hidden; /* Hide overflow */
 }
 
@@ -608,11 +608,12 @@ article .icon {
     opacity: 1; /* Show on hover */
     height: auto; /* Allow height to grow */
     margin-top: 5px; /* Optional: adds space between h3 and p */
-    transition-delay: 0.1s; /* Delay for the transition */
 }
+
+
 .article-container-exp h3 {
     display: flex;
-    font-size: 1.25rem;
+    font-size: 1.25rem; /* Initial font size */
     font-weight: bold;
     background: linear-gradient(90deg, 
         rgb(28, 28, 28),
@@ -627,16 +628,12 @@ article .icon {
     -webkit-background-clip: text;
     color: transparent; /* Make text transparent to show the background gradient */
     animation: textFlowColorsLeft 2s linear infinite; /* Apply the left-side-only flow effect */
+    transition: font-size 1s ease-in-out; /* Smooth transition for font-size */
 }
 
-/* Keyframes for a continuous leftward flow */
-@keyframes textFlowColorsLeft {
-    0% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%; /* Always move the background to the left */
-    }
+/* On hover, increase the font size of h3 */
+.article-container-exp article:hover h3 {
+    font-size: 1.75rem; /* Increase font size smoothly */
 }
 
 
