@@ -7,6 +7,10 @@
 .about-containers {
     flex-wrap: wrap;
 }
+
+.btn-color-2 {
+    color: black;
+}
 }
 
 
@@ -110,6 +114,7 @@
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
     }
+    
    
 }
 
