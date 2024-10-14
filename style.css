@@ -400,6 +400,14 @@ section {
         position: relative;
 }
 
+.section__pic-container-about {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0s;
+    margin-top: 75px;
+}
+
 .about-containers {
     gap: 2rem;
     margin-bottom: 1rem;
@@ -419,11 +427,17 @@ section {
     flex-direction: column;
 }
 
+.details-container-tech {  
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
 /* Ensure proper layout for the .details-container-tech */
 .about-details-container .details-container-tech {
     position: relative; /* Allows absolute positioning for the title */
     padding: 4.5rem 1.5rem 1.5rem 1.5rem; /* Extra padding at the top for the subtitle */
-    width: 93.4%;
+    width: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -434,6 +448,7 @@ section {
     border: 0.1rem solid rgb(163, 163, 163);
     margin-bottom: 28%;
 }
+
 
 /* Center the about-sub-title at the top inside the details-container-tech */
 .about-details-container .details-container-tech .about-sub-title {
