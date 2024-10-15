@@ -71,7 +71,7 @@ body {
         width: 100%;
         column-gap: 0; /* Add more space between the columns */
         row-gap: 2rem; /* You can keep the vertical space same */
-        padding-left: 1rem
+        
     }
  
     .article-container h3{
