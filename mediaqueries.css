@@ -1,7 +1,5 @@
-body {
-    width: 100vw;
-    height: 100vh;
-}
+
+
 
 @media screen and (max-width: 1400px) {
    #profile {
@@ -77,7 +75,7 @@ body {
         display: grid;
         grid-template-columns: repeat(2,3fr);
         width: 100%;
-        column-gap: 0; /* Add more space between the columns */
+        column-gap: 4rem; /* Add more space between the columns */
         row-gap: 2rem; /* You can keep the vertical space same */
         
     }
@@ -93,6 +91,7 @@ body {
         margin: 0;
         margin-left: 0rem;
         margin-right: 0rem;
+        align-items: center;
     }
 
     #experience{
@@ -101,6 +100,7 @@ body {
     
     #experience .about-containers{
         padding-left: 0 ;
+        width: 0;
     }
 
     #experience article{
@@ -113,11 +113,12 @@ body {
     }
 
     #experience .about-containers{
-        width: 100vw;
+       
     }
 
     .details-container-exp{
         width: 100rem;
+        padding: 0;
     }
 
     .article-container-exp{
@@ -203,8 +204,8 @@ body {
     }
 
     .details-container-tech {
-        margin-left: 2rem;
-        margin-right: 2.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
         
     }
 
