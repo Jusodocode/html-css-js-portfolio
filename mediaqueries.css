@@ -1,3 +1,8 @@
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
 @media screen and (max-width: 1400px) {
    #profile {
     height: 83vh;
@@ -61,8 +66,12 @@
     }
 
     .article-container {
-        grid-template-columns: repeat(2, 2fr);
-        column-gap: 0;
+        display: grid;
+        grid-template-columns: repeat(2,3fr);
+        width: 100%;
+        column-gap: 0; /* Add more space between the columns */
+        row-gap: 2rem; /* You can keep the vertical space same */
+        padding-left: 1rem
     }
  
     .article-container h3{
@@ -82,6 +91,11 @@
     .contact-info-container p, .nav-links li a {
         font-size: 1rem;
     }
+
+    .icon {
+        cursor: pointer;
+        height: 2rem;
+    }
 }
 
 @media screen and (max-width: 1400px) {
@@ -92,8 +106,8 @@
 
     .about-containers { 
         margin-top: 0;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
         gap: 0.5rem;
     }
 
@@ -103,12 +117,13 @@
     }
 
     .details-container-tech {
-        margin-left: 1rem;
-        margin-right: 1rem;
+        margin-left: 2rem;
+        margin-right: 2.5rem;
+        
     }
 
     .section__pic-container-about {
-        height: 40vh;
+        height: 30vh;
         width: 100%;
         justify-content: center;
         margin-top: 0.5rem;
