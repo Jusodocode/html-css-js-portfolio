@@ -54,7 +54,7 @@
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 999px) {
 
     *{
        max-width: 100vw;
@@ -75,9 +75,18 @@
         display: grid;
         grid-template-columns: repeat(2,3fr);
         width: 100%;
-        column-gap: 4rem; /* Add more space between the columns */
         row-gap: 2rem; /* You can keep the vertical space same */
         
+    }
+    .details-container {
+        padding: 1.5rem;
+        width: 15rem;
+        flex: 1;
+        background: white;
+        border-radius: 2rem;
+        border:rgb(53, 53, 53) 0.1rem solid;
+        border-color:rgb(163, 163, 163);
+        text-align: center;
     }
  
     .article-container h3{

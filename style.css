@@ -538,7 +538,6 @@ section {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     width: 100%;
-    column-gap: 7rem; /* Add more space between the columns */
     row-gap: 2rem; /* You can keep the vertical space same */
 }
 
