@@ -594,10 +594,7 @@ article .icon {
     padding: 1.5rem;
     width: 10rem;
     flex: 1;
-    background: white;
-    border-radius: 2rem;
-    border:rgb(36, 36, 36) 0.2rem solid;
-    border-color:rgb(101, 101, 101);    
+    background: white;   
     text-align: center;
 }
 
