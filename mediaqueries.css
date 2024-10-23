@@ -157,7 +157,7 @@
     }
 
     .contact-info-container a{
-        font-size: .75rem;
+        font-size: 1rem;
         
     }
     .contact-info-container p, .nav-links li a {
@@ -194,12 +194,9 @@
     img.icon.contact-icon {
         width: 20%;
         height: auto;
-        margin-left: 1rem;
     }
 
-    footer p {
-        
-    }
+   
 
 
 }
